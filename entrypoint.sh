@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -x
 az login --service-principal -u "$CLIENT_ID" -p "$CLIENT_SECRET" --tenant "$TENANT_ID"
 # Install the tool
 export GO111MODULE=on
